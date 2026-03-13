@@ -1,0 +1,21 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCSPDhnSpKXfib6uRrbwy2LwTr-pKky7xU",
+  authDomain: "orlog-online-917a5.firebaseapp.com",
+  projectId: "orlog-online-917a5",
+  storageBucket: "orlog-online-917a5.firebasestorage.app",
+  messagingSenderId: "97851024660",
+  appId: "1:97851024660:web:b4bff2b03a624e16274e01",
+  measurementId: "G-8EDBF85EFM"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
