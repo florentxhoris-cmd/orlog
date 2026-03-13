@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Orlog Online</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>ORLOG</h1>
+
+<div id="menu">
+<button onclick="createGame()">Create Game</button>
+<input id="joinCode" placeholder="Game Code">
+<button onclick="joinGame()">Join Game</button>
+</div>
+
+<div id="characterSelect"></div>
+
+<div id="gameBoard">
+
+<div id="player2" class="playerArea"></div>
+
+<div id="diceArea"></div>
+
+<div id="player1" class="playerArea"></div>
+
+</div>
+
+<button onclick="rollDice()">Roll Dice</button>
+<button onclick="endTurn()">End Turn</button>
+
+<audio id="music" autoplay loop>
+<source src="assets/music/ambience.mp3">
+</audio>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="firebase.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>

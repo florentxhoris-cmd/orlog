@@ -1,0 +1,24 @@
+let gameId
+let playerId=Math.random().toString(36).substr(2,9)
+
+function createGame(){
+
+gameId=Math.random().toString(36).substr(2,5)
+
+db.ref("games/"+gameId).set({
+players:{[playerId]:true},
+state:"waiting"
+})
+
+alert("Share this code:"+gameId)
+
+}
+
+function joinGame(){
+
+gameId=document.getElementById("joinCode").value
+
+db.ref("games/"+gameId+"/players/"+playerId).set(true)
+
+startGame()
+}
